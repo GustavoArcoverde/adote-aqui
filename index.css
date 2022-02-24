@@ -10,7 +10,7 @@ header{
     width: 80%;
     margin: auto;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px grey;
+    box-shadow: 1px 3px 5px grey;
 }
 
 h1{
@@ -41,7 +41,7 @@ img{
 
 span{
     color: #FDA10D;
-    text-shadow: 1px 1px 5px black;
+    text-shadow: 1px 1px 3px black;
 }
 
 .cabecalio{
@@ -77,7 +77,28 @@ a:hover{
 
 #resumo{
     text-align: center;
-    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 60%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: normal;
+    text-shadow: 1px 1px 3px grey;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.topico{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: blue;
+    width: 20%;
 }
 
 @media (max-width: 700px){
