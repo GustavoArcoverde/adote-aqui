@@ -137,6 +137,19 @@ p{
     font-weight: 200;
 }
 
+#adoteaqui{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid black;
+    width: 15%;
+    margin: 30px auto auto;
+    padding: 15px 15px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
 
 @media (max-width: 426px){
     header{
