@@ -129,14 +129,16 @@ h2{
 img{
     width: 70px;
     height: 70px;
-    margin-top: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 p{
     font-weight: 200;
 }
 
-@media (max-width: 700px){
+
+@media (max-width: 426px){
     header{
         padding-bottom: 5px;
         padding-top: 5px;
@@ -147,6 +149,10 @@ p{
         display: none;
     }
 
+    .logo{
+        display: none;
+    }
+
     .cabecalio{
         display: flex;
         flex-direction: row;
@@ -154,4 +160,64 @@ p{
         align-items: center;
         width: 100%;
     }
+
+    .topico{
+        display: flex;
+        width: 60%;
+        height: 100%;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    p{
+        height: fit-content;
+    }
+
 }
+
+@media (max-width: 769px){
+    header{
+        padding-bottom: 5px;
+        padding-top: 5px;
+        width: 100%;
+    }
+
+    
+    .topico{
+        display: flex;
+        width: 60%;
+        height: 100%;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    p{
+        height: fit-content;
+    }
+
+}
+
+@media (max-width: 1025px){
+    .container{
+        width: 100%;
+    }
+
+    .fotodog{
+        display: none;
+    }
+}
+
