@@ -222,6 +222,14 @@ p{
         height: fit-content;
     }
 
+    #adoteaqui{
+        padding-left: 50px;
+        padding-right: 50px;
+        display: flex;
+        text-align: center;
+        
+    }
+
 }
 
 @media (max-width: 1025px){
