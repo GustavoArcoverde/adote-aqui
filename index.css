@@ -126,7 +126,7 @@ h2{
     box-shadow: 1px 1px 5px gray;
 }
 
-img{
+.fotodog{
     width: 70px;
     height: 70px;
     margin-top: auto;
@@ -136,6 +136,39 @@ img{
 p{
     font-weight: 200;
 }
+
+#petsDisponiveis{
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container-pets{
+    background-color: #EBEBEB;
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    box-shadow: 1px 1px 5px gray;
+    
+}
+
+.pets{
+    display: flex;
+    align-items: center;
+}
+
+.pets > img{
+    width: 300px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.pets > div{
+    margin-left: 15px;
+}
+
 
 #adoteaqui{
     display: flex;
@@ -191,6 +224,12 @@ p{
     
     p{
         height: fit-content;
+    }
+
+    .pets{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
 }
