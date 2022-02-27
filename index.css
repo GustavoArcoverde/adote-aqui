@@ -143,20 +143,21 @@ p{
     font-family: 'Ubuntu', sans-serif;
 }
 
+
 .container-pets{
     background-color: #EBEBEB;
-    width: 80%;
+    width: 50%;
     margin: auto;
+    margin-bottom: 30px;
     padding: 15px;
     border-radius: 15px;
     font-family: 'Ubuntu', sans-serif;
     box-shadow: 1px 1px 5px gray;
-    
+    display: flex;
 }
 
 .pets{
     display: flex;
-    align-items: center;
 }
 
 .pets > img{
@@ -229,10 +230,15 @@ p{
     .pets{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
     }
 
-}
+    .pets > img{
+        width: 200px;
+        height: 200px;
+    }
+    }
+
 
 @media (max-width: 769px){
     header{
@@ -257,6 +263,13 @@ p{
         justify-content: center;
     }
     
+
+    .pets{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     p{
         height: fit-content;
     }
