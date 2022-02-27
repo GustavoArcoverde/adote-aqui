@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 
 header{
     display: flex;
@@ -8,6 +11,7 @@ header{
     background-color: #EBEBEB;
     width: 80%;
     margin: auto;
+    margin-top: 5px;
     border-radius: 5px;
     box-shadow: 1px 3px 5px grey;
 }
@@ -40,7 +44,7 @@ h1:hover{
 
 span{
     color: #FDA10D;
-    text-shadow: 1px 1px 3px black;
+    text-shadow: 1px 1px 2px black;
 }
 
 .cabecalio{
@@ -143,6 +147,10 @@ p{
     font-family: 'Ubuntu', sans-serif;
 }
 
+.dogsDescricoes{
+    display: flex;
+    flex-direction: column;
+}
 
 .container-pets{
     background-color: #EBEBEB;
@@ -154,6 +162,17 @@ p{
     font-family: 'Ubuntu', sans-serif;
     box-shadow: 1px 1px 5px gray;
     display: flex;
+}
+
+.nomeCachorro{
+    transition-duration: 0.5s;
+}
+
+.nomeCachorro:hover{
+    font-size: 30px;
+    font-style: italic;
+    color: #FDA10D;
+    text-shadow: 1px 1px 2px grey;
 }
 
 .pets{
@@ -177,13 +196,31 @@ p{
     justify-content: center;
     border: 1px solid black;
     width: 15%;
-    margin: 30px auto auto;
+    margin: auto auto;
+    margin-bottom: 30px;
     padding: 15px 15px;
     border-radius: 5px;
     box-shadow: 1px 1px 3px black;
     font-family: 'Ubuntu', sans-serif;
 }
 
+footer{
+    background-color: grey;
+    color: white;
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-style: italic;
+}
+
+@media (max-width: 376px){
+    .container-pets{
+        width: 80%;
+    }
+}
 
 @media (max-width: 426px){
     header{
