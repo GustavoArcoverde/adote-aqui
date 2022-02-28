@@ -66,7 +66,7 @@ span{
     text-decoration: none;
     transition-duration: 0.3s;
     font-family: 'Ubuntu', sans-serif;
-    box-shadow: 1px 1px 3px black;
+    box-shadow: 1px 1px 2px grey;
     margin-right: 10px;
 }
 
@@ -175,6 +175,39 @@ p{
     text-shadow: 1px 1px 2px grey;
 }
 
+.btnVerMais{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100px;
+    width: 95%;
+}
+
+.btnVerMais>a{
+    background-color: #E5E5E5;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px grey;
+    transition-duration: 0.3s;
+    position: absolute;
+}
+
+#verMaisElsa{
+    margin-bottom: 19px;
+}
+
+#verMaisSuzie{
+    margin-bottom: 31px;
+}
+
+.btnVerMais>a:hover{
+    background-color: #929090;
+    color: white;
+}
+
 .pets{
     display: flex;
 }
@@ -207,7 +240,7 @@ p{
 footer{
     background-color: grey;
     color: white;
-    height: 50px;
+    height: 5%;
     padding-left: 30px;
     padding-right: 30px;
     display: flex;
@@ -215,6 +248,12 @@ footer{
     justify-content: flex-end;
     font-style: italic;
     gap: 20px;
+}
+
+@media (max-width: 321px){
+    footer{
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 376px){
@@ -275,7 +314,19 @@ footer{
         width: 200px;
         height: 200px;
     }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
     }
+
+    footer > p{
+        margin-top: 5;
+        margin-bottom: 5;
+    }
+}
 
 
 @media (max-width: 769px){
@@ -329,6 +380,14 @@ footer{
 
     .fotodog{
         display: none;
+    }
+
+    #verMaisElsa{
+        margin-bottom: 0;
+    }
+
+    #verMaisSuzie{
+        margin-bottom: 0;
     }
 }
 
